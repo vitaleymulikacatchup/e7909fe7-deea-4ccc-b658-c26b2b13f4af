@@ -60,15 +60,15 @@ export default function Page() {
               badge: "Basic",
               price: "$19/mo",
               subtitle: "Essentials for Startup",
-              buttons: [{ text: "Sign Up", href: "signup" }],
-              features: ["Up to 5 projects", "Basic support"]
+              features: ["Up to 5 projects", "Basic support"],
+              buttons: [{ text: "Sign Up", href: "signup" }]
             }, {
               id: "2",
               badge: "Pro",
               price: "$49/mo",
               subtitle: "Advanced Features",
-              buttons: [{ text: "Sign Up", href: "signup-pro" }],
-              features: ["Unlimited projects", "Priority support"]
+              features: ["Unlimited projects", "Priority support"],
+              buttons: [{ text: "Sign Up", href: "signup-pro" }]
             }]}
           />
         </div>
@@ -148,7 +148,9 @@ export default function Page() {
             title="Get In Touch"
             description="Reach out for more information or inquiries."
             imageSrc={findAsset('contact-image').url}
-            buttons={[{ text: "Contact Us", href: "contact" }]}
+            inputPlaceholder="Your email address"
+            buttonText="Subscribe"
+            termsText="We respect your privacy. Unsubscribe at any time."
           />
         </div>
       </div>
